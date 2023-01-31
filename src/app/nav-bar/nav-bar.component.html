@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div style="background-color: rgb(71, 154, 192);" class="container-fluid">
+        <div style="display: block;">
+            <img id="imgNav" src="assets/images.png" alt="Avatar">
+            <a class="navbar-brand" routerLink="/Home">BE HAPPY</a>
+          </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/WhoAreWe">Who are we ?</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mini Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/lighting-dice">Lighting Dice</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+        <form class="d-flex" role="search">
+          
+          <button class="btn btn-outline-danger" type="button" (click)="logOutFunction()">LOG OUT</button>
+        </form>
+      </div>
+    </div>
+  </nav>

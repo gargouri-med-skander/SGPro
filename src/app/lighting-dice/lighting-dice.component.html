@@ -1,0 +1,352 @@
+<app-nav-bar></app-nav-bar>
+
+<body style="height: 655px;background-image: url('assets/dice6new.jpg');">
+   
+    
+        
+           
+             
+              <div id="dices" class="game"  >
+                <div class="container">
+                  <div style="margin-left: 460px;margin-top: 20px;"  id='dice1' class="dice dice-one">
+                    <div id="dice-one-side-one" class='side one'>
+                      <div class="dot one-1"></div>
+                    </div>
+                    <div id="dice-one-side-two" class='side two'>
+                      <div class="dot two-1"></div>
+                      <div class="dot two-2"></div>
+                    </div>
+                    <div id="dice-one-side-three" class='side three'>
+                      <div class="dot three-1"></div>
+                      <div class="dot three-2"></div>
+                      <div class="dot three-3"></div>
+                    </div>
+                    <div id="dice-one-side-four" class='side four'>
+                      <div class="dot four-1"></div>
+                      <div class="dot four-2"></div>
+                      <div class="dot four-3"></div>
+                      <div class="dot four-4"></div>
+                    </div>
+                    <div id="dice-one-side-five" class='side five'>
+                      <div class="dot five-1"></div>
+                      <div class="dot five-2"></div>
+                      <div class="dot five-3"></div>
+                      <div class="dot five-4"></div>
+                      <div class="dot five-5"></div>
+                    </div>
+                    <div id="dice-one-side-six" class='side six'>
+                      <div class="dot six-1"></div>
+                      <div class="dot six-2"></div>
+                      <div class="dot six-3"></div>
+                      <div class="dot six-4"></div>
+                      <div class="dot six-5"></div>
+                      <div class="dot six-6"></div>
+                    </div>
+                  </div>
+               </div>
+                <div class="container">
+                  <div style="margin-left: 780px;margin-top: 20px;" id='dice2' class="dice dice-two">
+                    <div id="dice-two-side-one" class='side one'>
+                      <div class="dot one-1"></div>
+                    </div>
+                    <div id="dice-two-side-two" class='side two'>
+                      <div class="dot two-1"></div>
+                      <div class="dot two-2"></div>
+                    </div>
+                    <div id="dice-two-side-three" class='side three'>
+                      <div class="dot three-1"></div>
+                      <div class="dot three-2"></div>
+                      <div class="dot three-3"></div>
+                    </div>
+                    <div id="dice-two-side-four" class='side four'>
+                      <div class="dot four-1"></div>
+                      <div class="dot four-2"></div>
+                      <div class="dot four-3"></div>
+                      <div class="dot four-4"></div>
+                    </div>
+                    <div id="dice-two-side-five" class='side five'>
+                      <div class="dot five-1"></div>
+                      <div class="dot five-2"></div>
+                      <div class="dot five-3"></div>
+                      <div class="dot five-4"></div>
+                      <div class="dot five-5"></div>
+                    </div>
+                    <div id="dice-two-side-six" class='side six'>
+                      <div class="dot six-1"></div>
+                      <div class="dot six-2"></div>
+                      <div class="dot six-3"></div>
+                      <div class="dot six-4"></div>
+                      <div class="dot six-5"></div>
+                      <div class="dot six-6"></div>
+                    </div>
+                  </div> 
+               </div>
+            
+               <div class="container">
+                <div style="margin-left: 1000px;margin-top: 20px;" id='dice3' class="dice dice-three">
+                  <div id="dice-three-side-one" class='side one'>
+                    <div class="dot one-1"></div>
+                  </div>
+                  <div id="dice-three-side-two" class='side two'>
+                    <div class="dot two-1"></div>
+                    <div class="dot two-2"></div>
+                  </div>
+                  <div id="dice-three-side-three" class='side three'>
+                    <div class="dot three-1"></div>
+                    <div class="dot three-2"></div>
+                    <div class="dot three-3"></div>
+                  </div>
+                  <div id="dice-three-side-four" class='side four'>
+                    <div class="dot four-1"></div>
+                    <div class="dot four-2"></div>
+                    <div class="dot four-3"></div>
+                    <div class="dot four-4"></div>
+                  </div>
+                  <div id="dice-three-side-five" class='side five'>
+                    <div class="dot five-1"></div>
+                    <div class="dot five-2"></div>
+                    <div class="dot five-3"></div>
+                    <div class="dot five-4"></div>
+                    <div class="dot five-5"></div>
+                  </div>
+                  <div id="dice-three-side-six" class='side six'>
+                    <div class="dot six-1"></div>
+                    <div class="dot six-2"></div>
+                    <div class="dot six-3"></div>
+                    <div class="dot six-4"></div>
+                    <div class="dot six-5"></div>
+                    <div class="dot six-6"></div>
+                  </div>
+                </div> 
+             </div>
+           
+              </div> 
+              
+             
+            
+    
+            <div id="info" >
+             
+              <h4 style="color: rgb(255, 255, 255);" ><i>Low :</i> <i *ngIf="LOW">✔️</i><i *ngIf="!LOW">❌</i></h4>
+              <h4 style="color: rgb(255, 251, 251);"><i>High :</i> <i *ngIf="HIGH">✔️</i> <i *ngIf="!HIGH">❌</i></h4>
+              <h4 style="color: rgb(255, 255, 255);"><i>Double :</i> <i *ngIf="DOUBLE">✔️</i> <i *ngIf="!DOUBLE">❌</i></h4>
+              <h4 style="color: rgb(255, 255, 255);"><i>Triple :</i> <i *ngIf="TRIPLE">✔️</i><i *ngIf="!TRIPLE">❌</i></h4>
+              
+              </div>
+              <h4 style="color: rgb(255, 255, 255);text-align: center;margin-left: 600px;margin-right: 580px;background-color: rgb(0, 0, 0);opacity: 0.80;height: 40px;font-weight: 900;font-size: 30px;"><i> </i>{{TOTALL}}</h4>
+    <div id="divBetTime" style="text-align: center;background-color: rgb(0, 214, 0);opacity: 0.95;width: 100%;font-family: 'Times New Roman', Times, serif ;margin-top: 90px;height: 30px;"> </div>
+    <div id="time" style="text-align: center;background-color: rgb(0, 214, 0);opacity: 0.95;width: 100%;font-family: 'Times New Roman', Times, serif ;height: 30px;"> {{timeLeft}}</div>
+  
+  <div id="tableau&listBet" style="display: flex;flex-direction: row;width: 100%;">
+       <div id="BetList" style="width:250px;height: 200px;overflow-y: scroll;margin-top:20px ;border-color: rgb(173, 103, 103);border-width: 2px;border-style: solid;" >
+        
+             <div *ngFor="let msg of infoMessages; let i = index">
+             <div style="display: flex;justify-content: space-between;height: 30px;">
+            <p style="color: rgb(222, 214, 214);font-weight: 600;font-size: 20px;">{{msg}}</p>
+            <button class="btn btn-outline-danger" style="border-radius: 60%;align-items: center;" type="button" (click)="removeBet(i)"><h5 >x</h5></button>
+       
+             </div>
+               <hr style="color: rgb(173, 103, 103);">
+             </div>
+              </div>
+ 
+    
+  <div id="Tables" >
+    <div id="tableOfBet">
+    <table  style="margin-top:20px ;border-color: black;border-style: solid;border-width: 2px;margin-left: 55px;">
+        <tr style="height: 100px;">
+           <td id="td_0" class="jmaaet-td" (click)="fct_low()" >
+             <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+              <h6 style="font-size: 10px;">{{Somme_Bet[0]}}</h6>
+            </div>
+            LOW 3-9
+            <p class="Multiplicate">x2</p>
+
+           </td> 
+           <td id="td_1" class="jmaaet-td" (click)="fct_3()">
+            <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+              <h6 style="font-size: 10px;">{{Somme_Bet[1]}}</h6>
+            </div>
+            3
+            <p class="Multiplicate">x150</p>
+           </td>
+           <td id="td_2" class="jmaaet-td" (click)="fct_4()">
+            <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+              <h6 style="font-size: 10px;">{{Somme_Bet[2]}}</h6>
+            </div>
+            4
+            <p class="Multiplicate">x50</p>
+        </td>
+        <td id="td_3" class="jmaaet-td" (click)="fct_5()">
+          <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+            <h6 style="font-size: 10px;">{{Somme_Bet[3]}}</h6>
+          </div>
+            5
+            <p class="Multiplicate">x25</p>
+        </td>
+        <td id="td_4" class="jmaaet-td" (click)="fct_6()">
+          <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+            <h6 style="font-size: 10px;">{{Somme_Bet[4]}}</h6>
+          </div>
+            6
+            <p class="Multiplicate">x15</p>
+        </td>
+        <td id="td_5" class="jmaaet-td" (click)="fct_7()">
+          <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+            <h6 style="font-size: 10px;">{{Somme_Bet[5]}}</h6>
+          </div>
+            7
+            <p class="Multiplicate">x10</p>
+        </td>
+        <td id="td_6" class="jmaaet-td" (click)="fct_8()">
+          <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+            <h6 style="font-size: 10px;">{{Somme_Bet[6]}}</h6>
+          </div>
+            8
+            <p class="Multiplicate">x7</p>
+        </td>
+        <td id="td_7" class="jmaaet-td" (click)="fct_9()">
+          <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+            <h6 style="font-size: 10px;">{{Somme_Bet[7]}}</h6>
+          </div>
+            9
+            <p class="Multiplicate">x6</p>
+        </td>
+        <td id="td_8" class="jmaaet-td" (click)="fct_10()">
+          <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+            <h6 style="font-size: 10px;">{{Somme_Bet[8]}}</h6>
+          </div>
+            10
+            <p class="Multiplicate">x5</p>
+        </td>
+        <td id="td_9" class="jmaaet-td" (click)="fct_high()">
+          <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+            <h6 style="font-size: 10px;">{{Somme_Bet[9]}}</h6>
+          </div>
+            HIGH 12-18
+            <p class="Multiplicate">x2</p>
+        </td>
+        </tr>
+        <tr style="height: 100px;">
+            
+            <td id="td_10" class="jmaaet-td-2" (click)="fct_double()" >
+                
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[10]}}</h6>
+              </div>
+              DOUBLE
+              <p class="Multiplicate">x2</p>
+            </td>
+            <td id="td_11" class="jmaaet-td-2" (click)="fct_11()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[11]}}</h6>
+              </div>
+               11
+               <p class="Multiplicate">x5</p>
+            </td>
+            <td id="td_12" class="jmaaet-td-2" (click)="fct_12()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[12]}}</h6>
+              </div>
+              12
+                <p class="Multiplicate">x6</p>
+            </td >
+            <td id="td_13" class="jmaaet-td-2" (click)="fct_13()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[13]}}</h6>
+              </div>
+              13
+                <p class="Multiplicate">x7</p>
+            </td>
+            <td id="td_14" class="jmaaet-td-2" (click)="fct_14()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[14]}}</h6>
+              </div>
+              14
+                <p class="Multiplicate">x10</p>
+            </td>
+            <td id="td_15" class="jmaaet-td-2" (click)="fct_15()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[15]}}</h6>
+              </div> 
+              15
+                <p class="Multiplicate">x15</p>
+            </td>
+            <td id="td_16" class="jmaaet-td-2" (click)="fct_16()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[16]}}</h6>
+              </div>
+              16
+                <p class="Multiplicate">x25</p>
+            </td>
+            <td id="td_17" class="jmaaet-td-2" (click)="fct_17()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[17]}}</h6>
+              </div>
+              17
+                <p class="Multiplicate">x50</p>
+            </td>
+            <td id="td_18" class="jmaaet-td-2" (click)="fct_18()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[18]}}</h6>
+              </div>
+              18
+                <p class="Multiplicate">x150</p>
+            </td>
+            <td id="td_19" class="jmaaet-td-2" (click)="fct_triple()">
+              <div style="margin-top: 13px;margin-left: 0px;margin-right: 61%;height: 10px;">
+                <h6 style="font-size: 10px;">{{Somme_Bet[19]}}</h6>
+              </div>
+              TRIPLE
+                <p class="Multiplicate">x25</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <!--  <div id="HistoriqueTable" >
+        <div *ngFor="let history of History; let i = index">
+{{History}}
+            </div>
+    </div>-->
+</div>
+ </div>
+    <hr style="border-color: black;border-style: solid;border-width: 2px;">
+<div style="display: flex;">
+
+   <h3 style="color: white;width: 220px;">Cash : {{yourCash}} DT</h3> 
+
+
+<div style="margin-left: 150px;-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;">
+    
+        <div style="display: flex;">
+        <input [disabled]="yourCash-0.2<0" type="radio" id="0.2" name="fav_language" value="0.2" [(ngModel)]="selectedValue" >
+        <label for="0.2" style="color: rgb(170, 166, 166);font-weight: 900;">0.2 DT</label><br>
+        <input  [disabled]="yourCash-0.4<0" type="radio" id="0.4" name="fav_language"  value="0.4" [(ngModel)]="selectedValue">
+        <label for="0.4" style="color: gray;font-weight: 900;">0.4 DT</label><br>
+        <input  [disabled]="yourCash-1<0"type="radio" id="1" name="fav_language" value="1" [(ngModel)]="selectedValue">
+        <label for="1" style="color: palevioletred;font-weight: 900;">1 DT</label>
+        <input  [disabled]="yourCash-2<0" type="radio" id="2" name="fav_language" value="2" [(ngModel)]="selectedValue">
+        <label for="2" style="color: red;font-weight: 900;">2 DT</label><br>
+        <input  [disabled]="yourCash-5<0"type="radio" id="5" name="fav_language" value="5" [(ngModel)]="selectedValue">
+        <label for="5" style="color: aqua;font-weight: 900;">5 DT</label><br>
+        <input  [disabled]="yourCash-10<0"type="radio" id="10" name="fav_language" value="10" [(ngModel)]="selectedValue">
+        <label for="10" style="color: rgb(12, 12, 240);font-weight: 900;">10 DT</label>
+      <input  [disabled]="yourCash-50<0"type="radio" id="50" name="fav_language" value="50" [(ngModel)]="selectedValue">
+        <label for="50" style="color: rgb(21, 226, 21);font-weight: 900;">50 DT</label>
+    </div>
+      
+</div>
+<div style="margin-left: 140px;width:115px;"><button id="previousButton" [disabled]="((timeLeft>12)||((timeLeft+2>=0)&&(timeLeft+2<=2)))||disablebutton" class="btn btn-outline-success" style="width:115px" (click)="previousBet()">Previous Bet</button></div>
+<div style="margin-left: 145px;width: 90px;"><button class="btn btn-outline-success" [disabled]="(timeLeft>12)||(timeLeft+2>=0)&&(timeLeft+2<=2)" (click)="Undo()">Undo</button></div>
+<div style="margin-left: 170px;width:220px">
+    <h4 style="color: rgb(255, 250, 250);font-weight: 750;">total bet : {{TotallBet}} DT</h4>
+</div>
+</div>
+
+</body>
+

@@ -1,0 +1,81 @@
+<div id="nav-part">
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <div style="display: block;">
+        <img id="imgNav" src="assets/images.png" alt="Avatar">
+        <a class="navbar-brand">BE HAPPY</a>
+      </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="text" placeholder="Username" name="UserLogin"  [(ngModel)]="SigninReq.username"aria-label="Username">
+          <input class="form-control me-2" type="password" placeholder="Password" name="UserPassLogin"  [(ngModel)]="SigninReq.password" aria-label="Password">
+          <button class="btn btn-outline-success" type="submit" (click)="SignInUser(SigninReq)">login</button>
+          
+          
+        </form>
+        
+      </div>
+    </nav>
+  </div>
+  
+  <div id="bodyy" >
+  <div id="form" style="text-align: center;margin-top: 150px;" >
+    <form style=" width: 50vw; margin-left : 25vw;" #form="ngForm" >
+  <div class="input-group mb-3">
+    
+    <input type="text" class="form-control" name="username" #u="ngModel" placeholder="Username#Id" [(ngModel)]="signupReq.username"  pattern="[A-Za-z0-9._%+-]+#[0-9]{4}" aria-label="Username" aria-describedby="basic-addon1" required>
+  
+  </div>
+  <div  *ngIf="u.invalid && u.touched">
+    <div *ngIf="u.errors" style="color: red;">invalid username !!</div>
+    
+    </div>
+  <div class="input-group mb-3">
+    <input type="email" class="form-control" name="email" placeholder="Discord Email"  #e="ngModel"  [(ngModel)]="signupReq.email" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+  <div  *ngIf="e.invalid && e.touched ">
+    <div *ngIf="e.errors" style="color: red;">invalid email !!</div>
+    
+    </div>
+  <div class="input-group mb-3">
+    
+    <input type="password" class="form-control" name="password" #p="ngModel" [(ngModel)]="signupReq.password" placeholder="Password" pattern=".{4,}" aria-label="Password" aria-describedby="basic-addon1" required>
+  </div>
+  <div  *ngIf="p.invalid && p.touched ">
+    <div *ngIf="p.errors" style="color: red;">At least 4 caracteres !!</div>
+    
+    </div>
+  <br>
+  
+  <label>Wanna join us ?</label>
+  <br>
+  <br>
+  <select class="form-select" aria-label="Default select example" name="select" [(ngModel)]="selectedValue">
+    <option name="optYES" value="yes">Yes</option>
+    <option name="optNO"value="no">No</option>
+  
+  </select>
+  
+  <!--<div  style="display: block;display: flex;">
+  <div class="input-group mb-3" >
+    <input type="file" class="form-control" id="inputGroupFile02" accept="image/*" (change)="onSelectFile($event)">
+    <label class="input-group-text" for="inputGroupFile02">Upload Your Avatar</label>
+    
+  </div>
+  <img [src]="imgURL" style=" width: 50px;height: 50px;border-radius: 50%;" *ngIf="imgURL">
+  </div>-->
+  <br>
+  <div class="input-group">
+    <span class="input-group-text">Tell Us More About You</span>
+    <textarea class="form-control" name="aboutU"  [(ngModel)]="about" placeholder="Interests , Games , Studys... " aria-label="With textarea"></textarea>
+  </div>
+  <br>
+  <div style="display: block;align-items: center;">
+    <button class="btn btn-outline-success" type="submit" [disabled]="form.invalid && selectedValue!=null" (click)="saveuser(signupReq)">Register</button>
+  
+  
+  </div>
+  </form>
+  <a class="aa" href=""  (click)="goToLink()">Forget Pasword ?</a>
+  </div>
+  </div>
