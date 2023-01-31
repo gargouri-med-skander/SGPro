@@ -64,8 +64,8 @@ export class AuthentificationComponent {
  
      },error =>{
        
-   
-       this.router.navigate(['Home']);
+       alert("username or password wrong !!");
+       
      }
    )
      
